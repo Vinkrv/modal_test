@@ -1,0 +1,144 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+@media screen and (max-width: 540px) {
+    .popup__content {
+        width: calc(100% - 80px);
+        margin: 40px;
+    }
+    .popup__window {
+        width: 70vw;
+        overflow-y: scroll;
+        height: auto;
+    }   
+    .popup__title {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 541px) {
+    .popup__content {
+        width: 430px;
+    }
+    .popup__window {
+        width: 430px;
+    }   
+    .popup__title {
+        width: auto;
+    }
+}
+
+@media screen and (max-height: 470px) {
+    .popup__content {
+        height: calc(100vh - 80px);
+        margin: 40px;
+    }
+    .popup__window {
+        height: 70vh;
+        overflow-y: scroll;
+    }   
+}
+
+@media screen and (min-height: 471px) {
+    .popup__content {
+        height: 390px;
+    }
+
+    .popup__window {
+        height: 330px;
+    } 
+}
+
+.page {
+    display: flex;
+    height:100%;
+    min-width:100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+.button {
+    width: 145px;
+    height: 58px;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #589888;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    transition: 0.1s;
+}
+  
+.button:hover {background-color: #4eb47f}
+  
+.button:active {
+    background-color: #4eb47f;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.popup__button {
+    height: 50px;
+    font-size: 36px;
+    background: #589888;
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+    
+
+.popup__close {
+    width: 26px;
+    position: absolute;
+    top: -26px;
+    right: -26px;
+    cursor: pointer;
+}
+  
+.popup__content {
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup__window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup__title {
+    width: 100%;
+    margin: 0;
+    font-size: 40px;
+    line-height: 50px;
+    font-family: 'Trebuchet MS';
+}
+
